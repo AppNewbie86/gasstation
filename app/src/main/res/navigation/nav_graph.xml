@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.clevertankenleichtgemacht.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailProductFragment"
+            app:destination="@id/detailProductFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_nextGasStationFragment"
+            app:destination="@id/nextGasStationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_outDoorServicePointFragment"
+            app:destination="@id/outDoorServicePointFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailProductFragment"
+        android:name="com.example.clevertankenleichtgemacht.DetailProductFragment"
+        android:label="fragment_detail_product"
+        tools:layout="@layout/fragment_detail_product" >
+        <argument
+            android:name="productId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_detailProductFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nextGasStationFragment"
+        android:name="com.example.clevertankenleichtgemacht.NextGasStationFragment"
+        android:label="fragment_next_gas_station"
+        tools:layout="@layout/fragment_next_gas_station" >
+        <action
+            android:id="@+id/action_nextGasStationFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/outDoorServicePointFragment"
+        android:name="com.example.clevertankenleichtgemacht.OutDoorServicePointFragment"
+        android:label="fragment_out_door_service_point"
+        tools:layout="@layout/fragment_out_door_service_point" >
+        <action
+            android:id="@+id/action_outDoorServicePointFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>
