@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    tools:context=".ui.HomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -37,7 +37,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/nextgasstation"
+            android:id="@+id/nextGasstationMap"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -64,24 +64,61 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="20dp"
             android:text="Unsere Top Produkte"
             android:textColor="#ECE7E7"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/nextgasstation"
-            app:layout_constraintTop_toBottomOf="@+id/nextgasstation" />
+            app:layout_constraintStart_toStartOf="@+id/nextGasstationMap"
+            app:layout_constraintTop_toBottomOf="@+id/nextGasstationMap" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/productRecyclerView"
+            android:layout_width="410dp"
+            android:layout_height="192dp"
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/product_item"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintVertical_bias="0.0"
+            tools:itemCount="3"
+            tools:listitem="@layout/product_item" />
+
+        <TextView
+            android:id="@+id/impressumBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Impressum"
+            android:textColor="#FFC107"
+            app:layout_constraintStart_toStartOf="@+id/productRecyclerView"
+            app:layout_constraintTop_toTopOf="@+id/unserTeamBtn" />
+
+        <TextView
+            android:id="@+id/unserTeamBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:text="Unser Team"
+            android:textColor="#FFC107"
+            app:layout_constraintStart_toEndOf="@+id/impressumBtn"
+            app:layout_constraintTop_toBottomOf="@+id/productRecyclerView" />
+
+        <TextView
+            android:id="@+id/sicherheitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="Sicherheit beim Tanken"
+            android:textColor="#FFC107"
+            app:layout_constraintStart_toEndOf="@+id/unserTeamBtn"
+            app:layout_constraintTop_toBottomOf="@+id/productRecyclerView" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

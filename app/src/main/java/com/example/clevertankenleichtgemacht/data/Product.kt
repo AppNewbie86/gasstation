@@ -7,8 +7,9 @@ package com.example.clevertankenleichtgemacht.data
  * @param imageResId die resource ID des Bildes des Productes
  */
 data class Product(
-    val id: String,
-    val imageResourceId: Int,
-    val mutableListOf: MutableList<Any>,
+    val id: Int,
+    val detailProductTitle: String,
+    val detailProductImageResourceId: Int,
+    val detailProductArticle: String
 )
 

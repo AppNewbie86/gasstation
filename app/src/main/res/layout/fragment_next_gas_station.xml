@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NextGasStationFragment">
+    tools:context=".ui.NextGasStationFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -12,9 +12,9 @@
         android:background="#EAE7E7">
 
         <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="413dp"
-            android:layout_height="742dp"
+            android:id="@+id/standortImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:src="@drawable/donzmap"
@@ -25,7 +25,7 @@
             app:layout_constraintVertical_bias="0.545" />
 
         <ImageView
-            android:id="@+id/imageView8"
+            android:id="@+id/standortImageDetail"
             android:layout_width="206dp"
             android:layout_height="328dp"
             android:layout_marginStart="140dp"
