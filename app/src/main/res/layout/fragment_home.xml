@@ -15,6 +15,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:adjustViewBounds="true"
+            android:alpha=".5"
             android:scaleType="centerCrop"
             android:src="@drawable/jettanke"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -24,101 +25,132 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
-        <TextView
-            android:id="@+id/title_home"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="411dp"
+            android:layout_height="46dp"
             android:layout_marginTop="24dp"
-            android:text="Clever Tanken"
-            android:textColor="#FAF8F8"
-            android:textSize="60sp"
+            android:src="@drawable/bildschirm_foto_2022_12_31_um_11_53_53"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/nextGasstationMap"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="128dp"
-            android:alpha="0.65"
-            android:src="@drawable/card1"
-            app:layout_constraintEnd_toStartOf="@+id/OutdoorServicePoint"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/backgroundimage"
-            app:layout_constraintTop_toBottomOf="@+id/title_home" />
-
-        <ImageView
-            android:id="@+id/OutdoorServicePoint"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="124dp"
-            android:layout_marginEnd="8dp"
-            android:alpha=".65"
-            android:src="@drawable/card2"
-            app:layout_constraintEnd_toEndOf="@+id/backgroundimage"
-            app:layout_constraintTop_toBottomOf="@+id/title_home" />
+            app:layout_constraintTop_toTopOf="@+id/backgroundimage" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:fontFamily="@font/abhaya_libre"
             android:text="Unsere Top Produkte"
-            android:textColor="#ECE7E7"
+            android:textColor="#FBBB01"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/nextGasstationMap"
-            app:layout_constraintTop_toBottomOf="@+id/nextGasstationMap" />
+            app:layout_constraintBottom_toTopOf="@+id/productRecyclerView"
+            app:layout_constraintStart_toStartOf="@+id/nextGasstationMap" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/productRecyclerView"
             android:layout_width="410dp"
-            android:layout_height="192dp"
+            android:layout_height="240dp"
+            android:layout_marginBottom="16dp"
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/unserTeamBtn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"
-            app:layout_constraintVertical_bias="0.0"
             tools:itemCount="3"
             tools:listitem="@layout/product_item" />
 
         <TextView
             android:id="@+id/impressumBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_width="74dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="32dp"
+            android:minHeight="48dp"
             android:text="Impressum"
             android:textColor="#FFC107"
-            app:layout_constraintStart_toStartOf="@+id/productRecyclerView"
-            app:layout_constraintTop_toTopOf="@+id/unserTeamBtn" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/productRecyclerView" />
 
         <TextView
             android:id="@+id/unserTeamBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
             android:clickable="true"
+            android:minHeight="48dp"
             android:text="Unser Team"
             android:textColor="#FFC107"
-            app:layout_constraintStart_toEndOf="@+id/impressumBtn"
-            app:layout_constraintTop_toBottomOf="@+id/productRecyclerView" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/impressumBtn" />
 
         <TextView
             android:id="@+id/sicherheitBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="16dp"
+            android:minHeight="48dp"
             android:text="Sicherheit beim Tanken"
             android:textColor="#FFC107"
-            app:layout_constraintStart_toEndOf="@+id/unserTeamBtn"
-            app:layout_constraintTop_toBottomOf="@+id/productRecyclerView" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/unserTeamBtn" />
+
+        <TextView
+            android:id="@+id/fueralleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="32dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="Für alle"
+            android:textColor="#1b4095"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="@+id/backgroundimage" />
+
+        <TextView
+            android:id="@+id/geschaeftskundenBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:minHeight="48dp"
+            android:text="Geschäftskunden"
+            android:textColor="#1b4095"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/fueralleBtn"
+            app:layout_constraintStart_toEndOf="@+id/fueralleBtn"
+            app:layout_constraintTop_toTopOf="@+id/fueralleBtn" />
+
+        <TextView
+            android:id="@+id/ueberJetBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:minHeight="48dp"
+            android:text="Über jet"
+            android:textColor="#1b4095"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/geschaeftskundenBtn"
+            app:layout_constraintStart_toEndOf="@+id/geschaeftskundenBtn"
+            app:layout_constraintTop_toTopOf="@+id/geschaeftskundenBtn"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/nextGasstationMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/variant2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/geschaeftskundenBtn" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

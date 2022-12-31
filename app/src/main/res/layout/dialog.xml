@@ -7,7 +7,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="354dp"
-        android:layout_height="216dp"
+        android:layout_height="716dp"
         android:background="@drawable/frame_11"
         android:backgroundTint="#0E1642"
         app:layout_constraintEnd_toEndOf="parent"
@@ -16,33 +16,96 @@
 
         <TextView
             android:id="@+id/dialoge_text"
-            android:layout_width="0dp"
-            android:layout_height="91dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="24dp"
+            android:layout_width="333dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
             android:fadingEdge="horizontal"
-            android:text="something whent wrong with your eMail details, or you have a bad password. Please Sign-In again."
+            android:text="All unseren Kunden sollte stets bewusst sein, dass sie ihre Fahrzeuge mit Gefahrstoffen betanken. Um Unfällen und Fehlern vorzubeugen, bitten wir Sie zu Ihrer eigenen Sicherheit die nachfolgenden Hinweise zu beachten:"
             android:textColor="#CDC8C8"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            android:textSize="10sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/dialoge_header" />
 
         <TextView
             android:id="@+id/dialoge_header"
-            android:layout_width="0dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="22dp"
-            android:text="Login failure:"
+            android:layout_width="326dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:text="Regeln und Verhalten an der Tankstelle"
             android:textColor="#FF9800"
-            android:textSize="16sp"
+            android:textSize="24sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/dialoge_text"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Vor dem Tanken"
+            android:textColor="#FF9800"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialoge_text" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="321dp"
+            android:layout_height="154dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Beim Einfahren auf die JET Station sollten Sie Schritttempo fahren, um Fußgänger, Radfahrer, die technischen Einrichtungen und sich selbst nicht zu gefährden. Auf allen JET Stationen herrscht absolutes Rauchverbot! Positionieren Sie Ihr Fahrzeug mit genügend Abstand zur Zapfsäule, um einen sicheren Bewegungsbereich und eine einfache Handhabung zu gewährleisten. Vor Beginn des Tankvorganges sollten Sie kurz die Karosserie oder Zapfsäule berühren, um eine statische Entladung ihrer eigenen Person sicherzustellen. Vergewissern Sie sich, dass Sie den richtigen Kraftstoff für Ihr Fahrzeug wählen, um etwaigen Schäden an ihrem Motor vorzubeugen. Bei Falschbetankung den Motor nicht starten! Bitten Sie das Tankstellenpersonal um Hilfe."
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Während des Tankens: "
+            android:textColor="#FF9800"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Nach dem Tanken"
+            android:textColor="#FF9800"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="313dp"
+            android:layout_height="102dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="An allen JET Stationen halten wir Einweghandschuhe für Sie bereit, die Ihre Haut vor möglichen Kraftstoff-Rückständen an der Zapfpistole oder am Schlauch schützen. Kinder oder Jugendliche sollten während der Betankung im Fahrzeug bleiben, um jegliche Gefährdung auszuschließen. Sie sollten die Zapfpistole nie unbeaufsichtigt lassen und beide Hände frei haben, um bei möglichen Komplikationen schnell eingreifen zu können."
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="331dp"
+            android:layout_height="152dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Vermeiden Sie beim Herausziehen der Zapfpistole das Nachtropfen, indem Sie die Zapfpistole sofort nach oben halten. Hängen Sie die Zapfpistole korrekt ein, um den Tankvorgang technisch abzuschließen. Denken Sie daran, Ihren Tankdeckel fest zu verschließen, bevor Sie zur Kasse gehen. Bevor Sie zur Kasse gehen, sollten Sie Ihr Auto immer abschließen. Merken Sie sich bitte die Nummer Ihrer Zapfsäule. Bitte fahren Sie direkt nach dem Bezahlvorgang vom Tankplatz. Der nächste Kunde wird es Ihnen danken. Beim Verlassen der JET Station fahren Sie bitte ebenfalls Schritttempo und achten bitte besonders auf Fußgänger, Radfahrer und den fließenden Straßenverkehr."
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

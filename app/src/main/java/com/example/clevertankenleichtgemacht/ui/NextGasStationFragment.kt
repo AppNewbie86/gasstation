@@ -1,5 +1,7 @@
 package com.example.clevertankenleichtgemacht.ui
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,7 +10,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import com.example.clevertankenleichtgemacht.MainViewModel
 import com.example.clevertankenleichtgemacht.databinding.FragmentNextGasStationBinding
-import com.example.clevertankenleichtgemacht.databinding.FragmentOutDoorServicePointBinding
 
 
 class NextGasStationFragment : Fragment() {
@@ -34,6 +35,13 @@ class NextGasStationFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+
+
+        val gmmIntentUri: Uri = Uri.parse("geo:48.6284,9.8150?q=gasstation")
+        val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
+        mapIntent.setPackage("com.google.android.apps.maps")
+        startActivity(mapIntent)
 
     }
 }

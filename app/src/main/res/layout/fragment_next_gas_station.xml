@@ -12,17 +12,17 @@
         android:background="#EAE7E7">
 
         <ImageView
-            android:id="@+id/standortImage"
+            android:id="@+id/background"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:adjustViewBounds="true"
+            android:alpha=".4"
             android:scaleType="centerCrop"
-            android:src="@drawable/donzmap"
+            android:src="@drawable/bildschirm_foto_2022_12_31_um_13_19_59"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.545" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/standortImageDetail"
@@ -30,9 +30,10 @@
             android:layout_height="328dp"
             android:layout_marginStart="140dp"
             android:layout_marginTop="328dp"
-            android:elevation="25dp"
+            android:elevation="45dp"
             android:src="@drawable/bildschirm_foto_2022_12_30_um_02_45_37"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

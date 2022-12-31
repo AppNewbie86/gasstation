@@ -12,16 +12,28 @@
         android:alpha=".7"
         android:background="@drawable/jettanke">
 
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="550dp"
+            android:src="@drawable/ellipse"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
         <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/abhaya_libre"
             android:text="Unser Team"
-            android:textColor="#F6F5F3"
+            android:textColor="#1b4095"
             android:textSize="48sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,6 +45,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="32dp"
             android:adjustViewBounds="true"
+            android:elevation="25dp"
             android:scaleType="centerCrop"
             android:src="@drawable/team"
             app:layout_constraintEnd_toEndOf="parent"
@@ -46,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="Erste Bilanz nach 2 Jahren"
-            android:textColor="#F4F3F3"
+            android:textColor="#FFC107"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/imageView3"
@@ -59,11 +72,37 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="72dp"
             android:layout_marginEnd="24dp"
-            android:text="Nach 2 jahren kann man sagen das sich die Übernahme in vollen Zügen gelohnt hat sie ist nicht nur ideal gelegen sondern auch sehr günstig für viele ansässigen Firmen"
+            android:text="Nach 2 Jahren kann man sagen das sich die Übernahme in vollen Zügen gelohnt hat sie ist nicht nur ideal gelegen sondern auch sehr günstig für viele ansässigen Firmen"
             android:textColor="#FDFCFC"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="24dp"
+            android:text="Durch den Umbau konnten wir neue Mitarbeiter einstellen was sich auch positiv auf unser Betriebsklima auswirkt hat"
+            android:textColor="#FDFCFC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="Da unser Team zwischen unseren Tankstellen pendeln sorgt das immer wieder für Abwechslung und andere Eindrücke"
+            android:textColor="#FDFCFC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
